@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Page</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="mobile">
+            <div class="header">
+                <div class="logo">
+                    <img src="Images/logo.png" alt="Logo">
+                </div>
+                <div class="more">
+                    <button id="bMore">
+                        <span class="material-symbols-outlined">menu</span>
+                    </button>
+                </div>
+            </div>
+            <div id="links" class="links">
+                <a href="somos.html" target="content-frame">Somos</a>
+                <a href="destinos.html" target="content-frame">Destinos</a>
+                <a href="planes.html" target="content-frame">Planes</a>
+                <a href="ubicacion.html" target="content-frame">Ubicación</a>
+                <a href="guias.html" target="content-frame">Guías</a>
+                <a href="contactos.html" target="content-frame">Contactos</a>
+            </div>
+        </div>
+
+        <div class="desktop">
+            <div class="logo">
+                <img src="Images/logo.png" alt="Logo">
+            </div>
+
+            <div class="primary">
+                <a href="somos.html" target="content-frame">Somos</a>
+                <a href="destinos.html" target="content-frame">Destinos</a>
+                <a href="planes.html" target="content-frame">Planes</a>
+            </div>
+
+            <div class="secondary full">
+                <a href="ubicacion.html" target="content-frame">Ubicación</a>
+                <a href="guias.html" target="content-frame">Guías</a>
+                <a href="contactos.html" target="content-frame">Contactos</a>
+            </div>
+
+            <div class="secondary mini">
+                <a href="#" class="more">More</a>
+                <div class="submenu">
+                    <a href="ubicacion.html" target="content-frame">Ubicación</a>
+                    <a href="guias.html" target="content-frame">Guías</a>
+                    <a href="contactos.html" target="content-frame">Contactos</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenedor para cargar los iframes -->
+    <iframe name="content-frame" class="iframe-container"></iframe>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://www.facebook.com/samacasenderista" target="_blank">
+                <img src="Images/facebook.png" alt="Facebook">
+            </a>
+            <a href="https://www.tiktok.com/@parameros" target="_blank">
+                <img src="Images/tik-tok.png" alt="TikTok">
+            </a>
+            <a href="https://www.instagram.com/parameros_extremos/?igshid=ZDdkNTZiNTM%3D" target="_blank">
+                <img src="Images/instagram.png" alt="Instagram">
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=%2B573144659188&context=ARArtTrlSHg7tamK0z1DpaTLfNeDFKmMfTAxEWDCRMKaDK_5FMg2EEbzGIUFaj7V3_OaEFkanUuTY6tfr_F95YHFt0tfGitNVwOTLjAk7q3XpyFxLq9V7PaRRG8r21tNDI9jDhD-ag4YdB_R_2f0DfyrTg&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwY2xjawEeUUtleHRuA2FlbQIxMAABHQb06SmTSGs5VC6ubEBcOnw75ay4c8kZ-uNTIQqEGgenSqUuxO-ArHdjZg_aem_UAgWxsm6wBCSkUMDUVr_vg" target="_blank">
+                <img src="Images/whatsapp.png" alt="WhatsApp">
+            </a>
+        </div>
+        <div class="copyright">
+            © 2024 Todos los derechos reservados
+        </div>
+    </footer>
+
+    <script>
+        const bMore = document.querySelector('#bMore');
+        const links = document.querySelector('#links');
+
+        bMore.addEventListener('click', () => {
+            links.classList.toggle('collapsed');
+        });
+    </script>
+</body>
+</html>
